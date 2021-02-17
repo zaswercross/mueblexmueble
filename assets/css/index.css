@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Raleway';
+    src:    url('../fonts/Raleway/static/Raleway-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/static/Raleway-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/static/Raleway-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+* {
+    font-family: 'Raleway' !important;
+}

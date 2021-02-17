@@ -1,0 +1,45 @@
+
+
+.mt-5.body.container {
+	z-index: 1;
+    position: relative;
+}
+
+.form-control, .btn {
+	border-radius: 1rem;
+}
+
+.btn-primary{
+    border: solid 2px #C79568; 
+    background-color: #FFFFFF;
+    color: #46321C;
+}
+.overlay {
+	background: #46321C7A;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 0;
+}
+
+section {
+	position: relative;
+	z-index: 1;
+}
+
+.body-login {
+    background-image: url('../img/BACK@2x.png');
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.body-register {
+    background-image: url('../img/BACK2@2x.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.bg-primary{
+    background-color: #46321C !important;
+}

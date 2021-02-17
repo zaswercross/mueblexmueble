@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Raleway';
+    src:    url('../fonts/Raleway/static/Raleway-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/static/Raleway-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/static/Raleway-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+* {
+    font-family: 'Raleway' !important;
+}
+* ::placeholder{
+    font-size: 0.7em !important;
+}
+* ::-moz-placeholder {
+    font-size: 0.7em !important;
+}
+* ::-webkit-input-placeholder {
+    font-size: 0.7em !important;
+}
+
+.text-bold{
+    font-weight: 900;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+	box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+}
+.form-control:focus {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+	box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+}
+.btn-primary:focus, .btn-primary.focus {
+	color: #fff;
+	background-color: #46321C;
+	border-color: #46321C;
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+	box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+	box-shadow: 0 0 0 0.2rem rgba(70,50,28,0.5);
+}
+
+.custom-control-label {
+    line-height: 0;
+    color: #fff;
+}
+
+.custom-control-label::after {
+	position: absolute;
+    top: 1.5rem;
+    left: -2.1rem;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	content: "";
+	background: no-repeat 80% / 80% 80%;
+}
+
+.text-light-mueble {
+    color: #ECDCC4;
+}
+
+.text-dark-mueble {
+    color: #46321C;
+}
+
+.custom-control-label::before {
+	border: #fff solid 2px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #46321C;
+	border-color: #46321C;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #46321C;
+    border-color: #46321C;
+}
+.custom-checkbox .custom-control-label::before {
+	width: 30px;
+	height: 30px;
+    position: relative;
+    left: -2.5em;
+    top: 1em;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	border-color: #46321C;
+	background-color: #46321C;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: -2.5em;
+    top: 1em;
+}
+.custom-checkbox .custom-control-label::before {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+.custom-control-label::before {
+	background-color: transparent;
+}
