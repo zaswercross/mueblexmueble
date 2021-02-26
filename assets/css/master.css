@@ -106,3 +106,30 @@
 .custom-control-label::before {
 	background-color: transparent;
 }
+
+.header-title{
+	color: #EAAC11;
+	font-weight: 900;
+}
+
+.wellcome-section {
+	background: rgb(233,203,160);
+	background: linear-gradient(180deg, rgba(233,203,160,1) 0%, rgba(230,190,136,1) 50%, rgba(230,186,130,1) 100%); 
+}
+
+.footer{
+		background: #EAAC11;
+		height: 25px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+}
+
+.navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,0.6);
+	border-color: transparent;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("../img/HOMEBARS@2x.png");
+}

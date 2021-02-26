@@ -12,96 +12,148 @@
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
-<body class="body-login">
+<body class="">
 
-    <header class="pb-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <a class="navbar-brand mx-auto" href="#">
-                <img src="assets/img/LOGNEGATIVE.png" class="mx-auto" alt="">
-            </a>
-        </nav>
-    </header>
-    <div class="overlay"></div>
-    <!-- LOGIN SECTION -->
-    <section class="mt-5 container" id="login">
-        <h2 class="text-bold text-light-mueble text-center">Inicia sesión</h2>
-        <form id="formLogin" class="mt-5">
-            <div class="form-row">
-                <div class="form-group col-12">
-                    <input type="text" class="form-control" id="staticEmail" placeholder="usuario" required>
-                </div>
-                <div class="form-group col-12">
-                    <input type="password" class="form-control" id="password" placeholder="contraseña" required>
-                </div>
-                <div class="form-group col-12 mt-3">
-                    <button type="submit" class="btn btn-primary btn-large btn-block font-weight-bold">Iniciar</button>
-                </div>
-                <div class="form-group col-12">
-                    <div class="custom-control custom-checkbox text-center">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">    Mantenerme conectado</label>
+    <main class="body-login d-none">
+        <header class="pb-5">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="assets/img/LOGNEGATIVE.png" class="mx-auto" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="overlay"></div>
+        <!-- LOGIN SECTION -->
+        <section class="pt-4 container" id="login">
+            <h2 class="text-bold text-light-mueble text-center">Inicia sesión</h2>
+            <form id="formLogin" class="mt-5">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control" id="staticEmail" placeholder="usuario" required>
                     </div>
-                  </div>
-            </div>
-        </form>
-        <div class="row networkingLogin text-center">
-            <a class="h5 text-white mt-4 col-12" href="#">¿Olvidaste tu contraseña?</a>
-            <div class="col-12">
-                <p class="text-white">Inicia sesión con</p>
-                <div class="form-group col-12">
-                    <button class="btn btn-success bg-white text-dark">Facebook</button>
-                    <button class="btn btn-default bg-white text-dark">Google</button>
+                    <div class="form-group col-12">
+                        <input type="password" class="form-control" id="password" placeholder="contraseña" required>
+                    </div>
+                    <div class="form-group col-12 mt-3">
+                        <button type="submit" class="btn btn-primary btn-large btn-block font-weight-bold">Iniciar</button>
+                    </div>
+                    <div class="form-group col-12">
+                        <div class="custom-control custom-checkbox text-center">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">    Mantenerme conectado</label>
+                        </div>
+                      </div>
+                </div>
+            </form>
+            <div class="row networkingLogin text-center">
+                <a class="h5 text-white mt-4 col-12" href="#">¿Olvidaste tu contraseña?</a>
+                <div class="col-12">
+                    <p class="text-white">Inicia sesión con</p>
+                    <div class="form-group col-12">
+                        <button class="btn btn-success bg-white text-dark">Facebook</button>
+                        <button class="btn btn-default bg-white text-dark">Google</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row register text-center">
-            <div class="form-group col-12 mt-3">
-                <button type="button" class="btn btn-primary btn-large btn-block font-weight-bold" id="crearCuenta">Crear una cuenta</button>
-            </div>
-        </div>
-    </section>
-    <!-- LOGIN SECTION -->
-    <!-- REGISTER SECTION -->
-    <section class="mt-5 container d-none" id="register">
-        <h2 class="text-bold text-dark-mueble text-center">Regístrate</h2>
-        <form id="formRegister" class="mt-5">
-            <div class="form-row">
-                <div class="form-group col-12">
-                    <input type="text" class="form-control" id="nombre" placeholder="nombre" required>
-                </div>
-                <div class="form-group col-12">
-                    <input type="email" class="form-control" id="emailReg" placeholder="correo electrónico" required>
-                </div>
-                <div class="form-group col-12">
-                    <input type="password" class="form-control" id="passwordRegUno" placeholder="contraseña" required>
-                </div>
-                <div class="form-group col-12">
-                    <input type="password" class="form-control" id="passwordRegDos" placeholder="confirmar contraseña" required>
-                </div>
-                <div class="form-group col-12">
-                    <input type="text" class="form-control" id="telefono" placeholder="teléfono" required>
-                </div>
+            <div class="row register text-center">
                 <div class="form-group col-12 mt-3">
-                    <button type="submit" class="btn btn-primary btn-large btn-block font-weight-bold">Registrarme</button>
+                    <button type="button" class="btn btn-primary btn-large btn-block font-weight-bold" id="crearCuenta">Crear una cuenta</button>
                 </div>
             </div>
-        </form>
-        <div class="row networkingLogin text-center">
-            <div class="col-12">
-                <p class="text-white">Inicia sesión con</p>
-                <div class="form-group col-12">
-                    <button class="btn btn-success bg-white text-dark">Facebook</button>
-                    <button class="btn btn-default bg-white text-dark">Google</button>
+        </section>
+        <!-- LOGIN SECTION -->
+        <!-- REGISTER SECTION -->
+        <section class="pt-4 container d-none" id="register">
+            <h2 class="text-bold text-dark-mueble text-center">Regístrate</h2>
+            <form id="formRegister" class="mt-5">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control" id="nombre" placeholder="nombre" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="email" class="form-control" id="emailReg" placeholder="correo electrónico" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="password" class="form-control" id="passwordRegUno" placeholder="contraseña" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="password" class="form-control" id="passwordRegDos" placeholder="confirmar contraseña" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control" id="telefono" placeholder="teléfono" required>
+                    </div>
+                    <div class="form-group col-12 mt-3">
+                        <button type="submit" class="btn btn-primary btn-large btn-block font-weight-bold">Registrarme</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row networkingLogin text-center">
+                <div class="col-12">
+                    <p class="text-white">Inicia sesión con</p>
+                    <div class="form-group col-12">
+                        <button class="btn btn-success bg-white text-dark">Facebook</button>
+                        <button class="btn btn-default bg-white text-dark">Google</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row register text-center">
-            <div class="form-group col-12 mt-3">
-                <button type="button" class="btn btn-primary btn-large btn-block font-weight-bold iniciarSesion">Iniciar sesión</button>
+            <div class="row register text-center">
+                <div class="form-group col-12 mt-3">
+                    <button type="button" class="btn btn-primary btn-large btn-block font-weight-bold iniciarSesion">Iniciar sesión</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- REGISTER SECTION -->
+        </section>
+        <!-- REGISTER SECTION -->
+    </main>
+    <main class="home-seccion">
+        <header class="pb-5">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/HOMEICON.png" class="mr-auto" alt="">
+                </a>
+                <h5 class="header-title mx-auto">¡Bienvenida!</h5>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            </nav>
+        </header>
+        <!-- WELLCOME SECTION -->
+        <section class="wellcome-section pt-4 container">
+            <div class="search">
+                <img src="assets/img/SEARCHBAR@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="card-presentation my-3">
+                <img src="assets/img/card.png" alt="" class="img-fluid">
+            </div>
+            <div class="chats-home">
+                <img src="assets/img/mischats.png" class="">
+                <figure>
+                    
+                    <img src="assets/img/CHATSEGMENT-3.png" class="img-fluid">
+                    <img src="assets/img/CHATSEGMENT-1.png" class="img-fluid">
+                    <img src="assets/img/CHATSEGMENT-2.png" class="img-fluid">
+                </figure>
+                <img src="assets/img/Seguimientos.png" class="">
+                <figure>
+                    <img src="assets/img/CHATSEGMENT.png" class="img-fluid">
+                </figure>
+            </div>
+            <div class="footer-home">
+                <img src="assets/img/encuentrax2.png" alt="" class="img-fluid">
+                <figure class="w-100 d-flex justify-content-around">
+                    <a><img src="assets/img/REPAIR.png" alt="" class="img-fluid"></a>
+                    <a><img src="assets/img/CHANGE.png" alt="" class="img-fluid"></a>
+                    <a><img src="assets/img/DONATE.png" alt="" class="img-fluid"></a>
+                </figure>
+            </div>
+        </section>
+        <!-- WELLCOME SECTION -->
+        <!-- FOOTER SECTION -->
+        <footer class="footer sticky">
+            
+        </footer>
+        <!-- FOOTER SECTION -->
+    </main>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
