@@ -123,6 +123,7 @@
 		position: fixed;
 		bottom: 0;
 		width: 100%;
+		z-index: 5;
 }
 
 .navbar-dark .navbar-toggler {
@@ -132,4 +133,23 @@
 
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("../img/HOMEBARS@2x.png");
+}
+
+.chat-section {
+	background-image: url('../img/PATTERNBACK@2x.png');
+	background-image: url('../img/PATTERNBACK@2x.png');
+	height: 100vh;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: cover;
+	background-color: #ECE2CF;
+}
+
+.head-group {
+	background-color: #CEC4A5;
+	border-radius: 0 0 15% 15%;
+	-webkit-border-radius: 0 0 15% 15%;
+	-moz-border-radius: 0 0 15% 15%;
+	-ms-border-radius: 0 0 15% 15%;
+	-o-border-radius: 0 0 15% 15%;
 }
