@@ -21,6 +21,6 @@ let horaActual = ()  => {
     OffTimeValue = (" " + Hours + Minutes + " " + ampm);
     offHours = now.getHours();
     offMinutes = now.getMinutes();
-    console.log(OffTimeValue);
+    // console.log(OffTimeValue);
     return OffTimeValue;
 }

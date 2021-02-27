@@ -115,11 +115,25 @@ document.getElementById("chatMessages").addEventListener("submit", e => {
     e.preventDefault();
     console.log(horaActual());
     let msg = document.getElementById("inputValid").value;
+    let lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corporis, accusamus recusandae officiis earum illum, cum vero odio reprehenderit inventore tempore incidunt numquam necessitatibus ipsam dolorum animi assumenda in iure.';
     let messg = `
     <div class="msg-send">
     <small class="chat-msg">${msg}</small>
     <small class="chat-time">${horaActual()}</small>
 </div>`;
+    let messg2 = `
+    <div class="msg-resp">
+    <small class="chat-msg">${lorem.slice(0,Math.floor(Math.random() * 100) + 1)}</small>
+    <small class="chat-time">${horaActual()}</small>
+</div>`;
     $(".container-chats").append(messg)
+    document.querySelector(".container-chats").scrollTo(0,document.body.scrollHeight)
+    // window.scrollTo(0,document.body.scrollHeight);
     document.getElementById("inputValid").value = '';
+    setTimeout(() => {
+        $(".container-chats").append(messg2)
+    document.querySelector(".container-chats").scrollTo(0,document.body.scrollHeight)
+    // window.scrollTo(0,document.body.scrollHeight);
+    }, Math.floor(Math.random() * 400) + 700)
+
 })
