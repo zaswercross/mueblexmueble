@@ -22,6 +22,17 @@ document.querySelector("#formLogin").addEventListener("submit", e => {
     document.querySelector(".body-login").classList.add("d-none")
     document.querySelector("#login").classList.add("d-none")
     document.querySelector("#register").classList.add("d-none")
+    $(".dropdown-menu").removeClass("show")
+});
+document.querySelector("#formRegister").addEventListener("submit", e => {
+    e.preventDefault();
+    sessionStorage.setItem("login", 1);
+    document.querySelector(".home-seccion").classList.remove("d-none")
+    document.querySelector(".wellcome-section").classList.remove("d-none")
+    document.querySelector(".chat-section").classList.add("d-none")
+    document.querySelector(".body-login").classList.add("d-none")
+    document.querySelector("#login").classList.add("d-none")
+    document.querySelector("#register").classList.add("d-none")
 });
 
 document.querySelector("#crearCuenta").addEventListener("click", e => {
@@ -71,6 +82,7 @@ for (let index = 0; index < salirButtons.length; index++) {
         document.querySelector(".body-login").classList.remove("d-none")
         document.querySelector("#login").classList.remove("d-none")
         document.querySelector("#register").classList.add("d-none")
+        $(".dropdown-menu").removeClass("show")
     })
 }
 const homeButtons = document.querySelectorAll(".home");
@@ -79,6 +91,7 @@ for (let index = 0; index < homeButtons.length; index++) {
     const element = homeButtons[index];
     element.addEventListener("click", e => {
         sessionStorage.setItem("login", 0);
+        $(".dropdown-menu").removeClass("show")
         document.querySelector(".home-seccion").classList.remove("d-none")
         document.querySelector(".wellcome-section").classList.remove("d-none")
         document.querySelector(".chat-section").classList.add("d-none")
@@ -89,10 +102,15 @@ for (let index = 0; index < homeButtons.length; index++) {
 }
 
 document.querySelector(".chat-active").addEventListener("click", e => {
+    $(".dropdown-menu").removeClass("show")
     document.querySelector(".home-seccion").classList.remove("d-none")
     document.querySelector(".wellcome-section").classList.add("d-none")
     document.querySelector(".chat-section").classList.remove("d-none")
     document.querySelector(".body-login").classList.add("d-none")
     document.querySelector("#login").classList.add("d-none")
     document.querySelector("#register").classList.add("d-none")
+})
+
+document.getElementById("chatMessages").addEventListener("submit", e => {
+    e.preventDefault();
 })
