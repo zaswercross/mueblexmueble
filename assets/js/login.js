@@ -113,4 +113,13 @@ document.querySelector(".chat-active").addEventListener("click", e => {
 
 document.getElementById("chatMessages").addEventListener("submit", e => {
     e.preventDefault();
+    console.log(horaActual());
+    let msg = document.getElementById("inputValid").value;
+    let messg = `
+    <div class="msg-send">
+    <small class="chat-msg">${msg}</small>
+    <small class="chat-time">${horaActual()}</small>
+</div>`;
+    $(".container-chats").append(messg)
+    document.getElementById("inputValid").value = '';
 })

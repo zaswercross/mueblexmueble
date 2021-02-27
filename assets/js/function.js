@@ -10,3 +10,17 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+let horaActual = ()  => {
+    let OffTimeValue = "";
+    let now = new Date();
+    let ampm = (now.getHours() >= 12) ? " pm" : " am"
+    let Hours = now.getHours();
+    Hours = ((Hours > 12) ? Hours - 12 : Hours);
+    let Minutes = ((now.getMinutes() < 10) ? ":0" : ":") + now.getMinutes();
+    OffTimeValue = (" " + Hours + Minutes + " " + ampm);
+    offHours = now.getHours();
+    offMinutes = now.getMinutes();
+    console.log(OffTimeValue);
+    return OffTimeValue;
+}
