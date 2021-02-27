@@ -206,6 +206,11 @@
 	left: auto;
 }
 
+.container-chats {
+	max-height: 40vh;
+	overflow: auto;
+}
+
 .container-chats .chat-msg{
 	color:#46321C;
 }
