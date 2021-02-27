@@ -1,4 +1,6 @@
 if (sessionStorage.getItem("login") == 1) {
+    document.querySelector("footer").classList.add("footer1");
+    document.querySelector("footer").classList.remove("footer2");
     document.querySelector(".home-seccion").classList.remove("d-none")
     document.querySelector(".wellcome-section").classList.remove("d-none")
     document.querySelector(".chat-section").classList.add("d-none")
@@ -16,6 +18,8 @@ if (sessionStorage.getItem("login") == 1) {
 document.querySelector("#formLogin").addEventListener("submit", e => {
     e.preventDefault();
     sessionStorage.setItem("login", 1);
+    document.querySelector("footer").classList.add("footer1");
+    document.querySelector("footer").classList.remove("footer2");
     document.querySelector(".home-seccion").classList.remove("d-none")
     document.querySelector(".wellcome-section").classList.remove("d-none")
     document.querySelector(".chat-section").classList.add("d-none")
@@ -27,6 +31,8 @@ document.querySelector("#formLogin").addEventListener("submit", e => {
 document.querySelector("#formRegister").addEventListener("submit", e => {
     e.preventDefault();
     sessionStorage.setItem("login", 1);
+    document.querySelector("footer").classList.add("footer1");
+    document.querySelector("footer").classList.remove("footer2");
     document.querySelector(".home-seccion").classList.remove("d-none")
     document.querySelector(".wellcome-section").classList.remove("d-none")
     document.querySelector(".chat-section").classList.add("d-none")
@@ -75,6 +81,8 @@ const salirButtons = document.querySelectorAll(".salir");
 for (let index = 0; index < salirButtons.length; index++) {
     const element = salirButtons[index];
     element.addEventListener("click", e => {
+        document.querySelector("footer").classList.add("footer1");
+    document.querySelector("footer").classList.remove("footer2");
         sessionStorage.setItem("login", 0);
         document.querySelector(".home-seccion").classList.add("d-none")
         document.querySelector(".wellcome-section").classList.add("d-none")
@@ -97,12 +105,16 @@ for (let index = 0; index < homeButtons.length; index++) {
         document.querySelector(".chat-section").classList.add("d-none")
         document.querySelector(".body-login").classList.add("d-none")
         document.querySelector("#login").classList.add("d-none")
-        document.querySelector("#register").classList.add("d-none")
+        document.querySelector("#register").classList.add("d-none");
+        document.querySelector("footer").classList.add("footer1");
+        document.querySelector("footer").classList.remove("footer2");
     })
 }
 
 document.querySelector(".chat-active").addEventListener("click", e => {
     $(".dropdown-menu").removeClass("show")
+    document.querySelector("footer").classList.add("footer2");
+    document.querySelector("footer").classList.remove("footer1");
     document.querySelector(".home-seccion").classList.remove("d-none")
     document.querySelector(".wellcome-section").classList.add("d-none")
     document.querySelector(".chat-section").classList.remove("d-none")
